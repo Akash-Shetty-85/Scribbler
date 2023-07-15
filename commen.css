@@ -1,0 +1,227 @@
+ body {
+     margin: 0;
+     padding: 0;
+     background-image: url("images/background.jpg");
+     background-size: cover;
+     /* background-size:  100% 100% ;  */
+     background-repeat: no-repeat;
+     /* background-position: center; */
+ }
+
+
+ header {
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem;
+     
+ }
+
+ .logo {
+     display: flex;
+     flex-direction: column;
+     
+ }
+
+ .logo h1 {
+     font-family: 'Montez', cursive;
+     color: blue;
+     font-size: 2rem;
+     margin: 0;
+ }
+
+ .subheading p {
+     font-family: 'Ubuntu Mono', monospace;
+     font-size: 1rem;
+     margin: 0;
+ }
+
+ .buttons {
+     display: flex;
+     gap: 1rem;
+     margin-top: 0;
+ }
+
+ .sign-up-btn,
+ .sign-in-btn {
+     font-family: 'Arial', sans-serif;
+     font-size: 1rem;
+     padding: 0.5rem 1rem;
+     background-color: blue;
+     color: white;
+     border: none;
+     cursor: pointer;
+   
+ }
+
+ .sign-up-btn:hover,
+ .sign-in-btn:hover {
+     background-color: darkblue;
+ }
+
+ .sign-up-btn:focus,
+ .sign-in-btn:focus {
+     outline: none;
+ }
+
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ .modal-content {
+     background-color: #fefefe;
+     margin: 15% auto;
+     padding: 20px;
+     border: 1px solid #888;
+     max-width: 400px;
+ }
+
+ .close {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+ .close:hover,
+ .close:focus {
+     color: black;
+     text-decoration: none;
+ }
+
+ form {
+     margin-top: 20px;
+ }
+
+ input {
+     width: 95%;
+     padding: 10px;
+     margin-bottom: 10px;
+ }
+
+ .green-btn {
+     background-color: green;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     width: 100%;
+ }
+
+ .green-btn:hover {
+     background-color: darkgreen;
+ }
+
+ .error-message {
+     color: red;
+     font-size: 12px;
+     margin-top: 10px;
+ }
+
+ .signup-text {
+     margin-top: 10px;
+ }
+
+ .signup-text a {
+     color: black;
+     text-decoration: none;
+ }
+
+ .signup-text a:hover {
+     text-decoration: underline;
+ }
+
+ .buttons-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2rem;
+ }
+
+ .all-posts-btn,
+ .create-post-btn {
+     background-color: rgb(236, 236, 94);
+     color: orange;
+     padding: 1rem 2rem;
+     font-size: 1.2rem;
+     border: none;
+     cursor: pointer;
+ }
+
+ .create-post-btn {
+     margin-left: 1rem;
+ }
+
+ /* Existing CSS code */
+
+#create-post-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  #create-post-modal .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 1rem;
+    border: 1px solid #888;
+    max-width: 1000px;
+  }
+  
+  #create-post-modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #create-post-modal .close:hover,
+  #create-post-modal .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #create-post-modal label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  #create-post-modal input,
+  #create-post-modal textarea {
+    width: 95%;
+    padding: 0.5rem;
+   
+    margin-bottom: 1rem;
+  }
+  #create-post-modal textarea{
+    height: 100px;
+  }
+  #create-post-modal .create-btn {
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,215 @@
+  body {
+    background-color: #ffeedd;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-family: 'Montez', cursive;
+    color: blue;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subheading p {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.sign-up-btn,
+.sign-in-btn {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover,
+.sign-in-btn:hover {
+    background-color: darkblue;
+}
+
+.sign-up-btn:focus,
+.sign-in-btn:focus {
+    outline: none;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.post {
+    /* Card styles */
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    /* padding: 1rem; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    flex-basis: calc(40% - 1rem);
+    margin: 2rem;
+    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+    .post {
+        flex-basis: calc(35% - 1rem);
+        margin: 0.5rem;
+        padding: 0.25rem;
+    }
+}
+
+.post:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+}
+
+.post-header p {
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.post-content {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.post-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.post-content p {
+    margin: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    color: #d33;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.delete-icon:hover {
+    color: #b30000;
+}
+
+.ellipsis-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-buttons .modal-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn {
+    color: white;
+    background-color: rgb(239, 102, 102);
+    height: 5vh;
+    width: 5vw;
+    margin-left:10rem;
+
+}
+
+.confirm-btn {
+    color: white;
+    background-color: rgb(15, 131, 15);
+    height: 5vh;
+    width: 5vw;
+    margin-left:1rem;
+}
+
+.delete-post-text {
+    margin-right: 10px;
+}
+
+#delete-post-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
+#delete-post-modal .modal-content {
+    max-width: 400px;
+}
+.module {
+    background-color: rgba(0, 0, 0, 0.595);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .module-content{
+        position: relative;;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+            background-color: #fefefe;
+            
+            padding: 20px;
+            border: 1px solid #888;
+            max-width: 400px;
+       
+  }
