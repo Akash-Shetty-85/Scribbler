@@ -64,12 +64,14 @@ header {
     margin-bottom: 20px;
     /* background-color: #ffffff; */
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
     flex-basis: calc(40% - 1rem);
     margin: 2rem;
+    padding: 1%;
     max-width: 100%;
+    flex-direction: column;
 }
 
 @media (max-width: 992px) {
@@ -92,39 +94,48 @@ header {
 }
 
 .post-header p {
-    font-weight: bold;
+    font-weight: 300;
     margin-left: 0.5rem;
+
 }
 
 .post-content {
     flex-grow: 1;
-    border: 1px solid #ccc;
-    padding: 10px;
+    /* border: 1px solid #ccc; */
+    padding: 15px;
     position: relative;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .post-author {
-    font-weight: bold;
+    font-weight: 300 ; 
     margin-bottom: 0.5rem;
     margin-left: 10px;
     text-align: left;
+    font-family: cursive,'Montez';
+    font-size: 1.75rem;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
 }
 
 .edit-btn {
     background-color: transparent;
     border: none;
+    border-radius:5px ;
     cursor: pointer;
     font-weight: bold;
     color: blue;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
+    justify-content: space-between;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
     padding: 0.5rem;
     transition: color 0.3s ease-in-out;
-    background:pink;
+    background:rgb(250, 153, 169);
 }
 
 .edit-btn:hover {
@@ -168,11 +179,11 @@ header {
 .post-content p {
     margin: 0;
     line-height: 1.5;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 }
 
 
@@ -226,3 +237,22 @@ header {
     z-index: 9999;
     backdrop-filter: blur(5px);
 }
+.comment-box {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .comment {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .all-comments {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
